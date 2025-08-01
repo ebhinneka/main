@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link rel="shortcut icon" type="image/png" href="https://i.imghippo.com/files/LWm4944bRo.png" />
-    <title>SIKBM | SMPN 1 PASURUAN</title>
+    <link rel="shortcut icon" type="image/png" href="https://i.imghippo.com/files/WXB3962h.png" />
+    <title>eBhinneka</title>
     
-    <!-- PERUBAHAN: Menggunakan nama file baru untuk manifest -->
-    <link rel="manifest" href="/manifest-v2.json">
+    <!-- PERBAIKAN: Menggunakan path relatif untuk manifest -->
+    <link rel="manifest" href="manifest-v2.json">
 
     <style>
         html, body {
@@ -31,7 +31,7 @@
 <body>
     <iframe  
         id="appFrame"
-        src="https://script.google.com/macros/s/AKfycbx1srvUsJdUQoWMh6vzhrwIL5N5ZOCcjIjDxAZLWsLNK_GjIj-W-VPj-w2dPI2_j7cESg/exec"
+        src="https://script.google.com/macros/s/AKfycbxsikxkVJW5SZOGvg5GaW88WypYoaKKJDlF48cUUkeuG9kDaAEYgNAHnj7bMvxY7rA/exec"
         allowfullscreen="true"
         allow="camera">
         Browser Anda tidak mendukung iframe.
@@ -69,8 +69,8 @@
 
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                // PERUBAHAN: Menggunakan nama file baru untuk service worker
-                navigator.serviceWorker.register('/sw-v2.js')
+                // PERBAIKAN: Menggunakan path relatif untuk service worker
+                navigator.serviceWorker.register('sw-v2.js')
                     .then(registration => console.log('Service Worker v2 terdaftar:', registration.scope))
                     .catch(error => console.error('Pendaftaran Service Worker v2 gagal:', error));
             });
