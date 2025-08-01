@@ -1,12 +1,12 @@
 {
-  "name": "BK 360 SMPN 1 PASURUAN",
-  "short_name": "BK360",
-  "start_url": "/index.html",
+  "name": "eBhinneka",
+  "short_name": "eBhinneka",
+  "start_url": ".",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
   "orientation": "portrait",
-  "description": "Bimbingan Konseling, Multi Peran",
+  "description": "Digitalisasi Administrasi Kinerja",
   "icons": [
     {
       "src": "https://i.imghippo.com/files/WXB3962h.png",
